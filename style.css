@@ -12,7 +12,9 @@ a{
 ul{
     list-style: none;
 }
-
+.active{
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
 .container{
     width: 90%;
     margin: 0 auto;

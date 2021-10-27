@@ -9,23 +9,22 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
   </head>
   <body>
-    <nav>
+    <nav class="nava">
       <!-- 100width height padding flex  -->
       <div class="nav container">
-        <a href="" class="fab fa-amazon-pay"></a>
+        <a href="#Home" class="fab fa-amazon-pay"></a>
         <ul class="list_link">
-          <a href=""><li class="link">Home</li></a>
-          <a href=""><li class="link">Products</li></a>
-          <a href=""><li class="link">Contact</li></a>
-          <a href=""><li class="link">About</li></a>
+          <a href="#Home"><li class="link">Home</li></a>
+          <a href="#Products"><li class="link">Products</li></a>
+          <a href="#Contact"><li class="link">Contact</li></a>
+          <a href="#About"><li class="link">About</li></a>
         </ul>
       </div>
     </nav>
     <header id="Home">
       <div class="container header">
         <div class="header_content">
-          <h1 class="header_title">Compra Ya sad sad</h1>
-          <p class="fas fa-air-freshener"></p>
+          <h1 class="header_title">Compra Ya</h1>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, perferendis.</p>
           <a href="" class="header_btn">Visitar</a>
         </div>
@@ -81,5 +80,11 @@
         <p>La calle que no existe 123</p>
       </div>
     </footer>
+  <script>
+    let header = document.querySelector(".nava")
+    document.addEventListener("scroll",e=>{
+      document.documentElement.scrollTop > 0 ? header.classList.add("active") : header.classList.remove("active") 
+} )
+  </script>
   </body>
 </html>
